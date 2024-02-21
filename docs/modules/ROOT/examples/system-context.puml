@@ -1,0 +1,17 @@
+'example for c4 in puml
+@startuml C4_Elements
+!include <C4/C4_Container>
+
+AddRelTag("dashed", $lineStyle = DashedLine())
+
+System_Ext(altova, "Altova", "")
+
+System_Boundary(c1, "") {
+    Container(rkConnector, "RK-Connector", "Spring Boot App", "Web-App mit Rest API")
+    System_Ext(trl, "TRL", "als Maven Lib")
+}
+
+Rel_R(altova, rkConnector, "sendet Daten\n zur Berechnung", "http requests", $tags="dashed")
+Rel(rkConnector, trl, "mapped Daten")
+
+@enduml

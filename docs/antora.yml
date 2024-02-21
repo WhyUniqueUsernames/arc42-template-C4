@@ -1,0 +1,10 @@
+# the name or version must be unique for the referring playbook
+name: name
+title: Title
+version: true # true uses branch name as version
+start_page: index.adoc
+nav:
+  - modules/ROOT/nav.adoc
+asciidoc:
+  attributes:
+    optimize-content: true
