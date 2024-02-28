@@ -15,6 +15,21 @@ endif::optimize-content[]
 [[section-introduction-and-goals]]
 ==	Einführung und Ziele
 
+
+ifdef::showArc42Help[]
+****
+Hilfreiche Quellen für das Ausfüllen dieser Dokumentation.
+
+* xref:https://docs.antora.org/antora/latest/[Antora docs]
+* xref:https://docs.asciidoctor.org/asciidoc/latest/[Asciidoctor docs]
+* xref:https://c4model.com/[C4 Model]
+* xref:https://www.dokchess.de/[Dokchess Beispiel]
+* xref:https://github.com/plantuml-stdlib[PlantUML C4 Libraries]
+* xref:https://blog.anoff.io/2019-04-19-antora-plantuml-customize-ui/[Blog - Antora with PlantUML]
+
+****
+endif::[]
+
 ifdef::showArc42Help[]
 ****
 Beschreibt die wesentlichen Anforderungen und treibenden Kräfte, die bei der Umsetzung der Softwarearchitektur und Entwicklung des Systems berücksichtigt werden müssen.
@@ -75,20 +90,11 @@ Tabellarische Darstellung der Qualitätsziele mit möglichst konkreten Szenarien
 ****
 endif::[]
 
-.*Sicherheit*:
-Zur Sicherung der Endpunkte wurde eine Kombination aus Basic Auth und JWTs verwendet.
-
-.*Kombatibilität*:
-Es wurden Masken Entwickelt, die den Rechkern-Output auf die für Invitatio notwendigsten Daten reduziert. Dies ist ein optionales und erweiterbares Feature, das über Requestparameter steuerbar ist.
-
-.*Funktionale Eignung*:
-Das Mapping und die Verarbeitung der Daten wurde ausgiebig mit Testdaten aus dem Fachbereich getestet.
-
 === Stakeholder
 
 [cols="1,1,2" options="header"]
 |===
 |Rolle |Kontakt |Erwartungshaltung
-| _impaq Entwickler_ | _mailto:name@mail.de[]_ | _..._
-| _impaq Architect_ | _mailto:name2@mail.de[]_ | _Einhaltung Architekturrichtlinien_
+| _..._ | _mailto:...[]_ | _..._
+| _..._ | _mailto:...[]_ | _..._
 |===

@@ -52,7 +52,12 @@ Siehe https://docs.arc42.org/section-7/[Verteilungssicht] in der online-Dokument
 ****
 endif::[]
 
-=== Infrastruktur Ebene 1
+[plantuml, svg]
+----
+include::example$deployment-diagram.puml[]
+----
+
+=== Infrastruktur
 
 ifdef::showArc42Help[]
 ****
@@ -67,16 +72,6 @@ Für mehrere Umgebungen oder alternative Deployments kopieren Sie diesen Teil vo
 ****
 endif::[]
 
-_**<Übersichtsdiagramm>**_
-
-Begründung:: _<Erläuternder Text>_
-
-Qualitäts- und/oder Leistungsmerkmale:: _<Erläuternder Text>_
-
-Zuordnung von Bausteinen zu Infrastruktur:: _<Beschreibung der Zuordnung>_
-
-=== Infrastruktur Ebene 2
-
 ifdef::showArc42Help[]
 ****
 An dieser Stelle können Sie den inneren Aufbau (einiger) Infrastrukturelemente aus Ebene 1 beschreiben.
@@ -85,16 +80,3 @@ Für jedes Infrastrukturelement kopieren Sie die Struktur aus Ebene 1.
 ****
 endif::[]
 
-==== _<Infrastrukturelement 1>_
-
-_<Diagramm + Erläuterungen>_
-
-==== _<Infrastrukturelement 2>_
-
-_<Diagramm + Erläuterungen>_
-
-...
-
-==== _<Infrastrukturelement n>_
-
-_<Diagramm + Erläuterungen>_

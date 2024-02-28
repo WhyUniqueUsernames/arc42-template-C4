@@ -37,3 +37,14 @@ Siehe https://docs.arc42.org/section-2/[Randbedingungen] in der online-Dokumenta
 ****
 endif::[]
 
+[%autowidth.stretch]
+|===
+|Randbedingung |Erläuterung
+
+| _..._
+| _..._
+
+| _..._
+| _..._
+
+|===

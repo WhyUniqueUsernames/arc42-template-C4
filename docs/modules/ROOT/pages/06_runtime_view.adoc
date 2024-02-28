@@ -53,28 +53,3 @@ Siehe https://docs.arc42.org/section-6/[Laufzeitsicht] in der online-Dokumentati
 
 ****
 endif::[]
-
-=== _Authorisierung REST API_
-
-Entgegen anfänglicher Annahmen, wurde von der SVS ein Sicherheitssystem gewünscht. Alle vom Webbrowser erreichbaren Endpunkte wurden mit Basic Auth gesichert. Die API wird mit JWTs geschützt.
-
-[%autowidth.stretch]
-|===
-|Endpoint |Sicherheit |Erläuterung
-
-| _/api/v1/auth_
-| _Basic Auth_
-| _POST - generiert Token_
-
-| _/api/v1/trl_
-| _Bearer Token_
-| _POST - empfängt Daten die vom TRL berechnet werden sollen_
-
-| _/api/v1/version_
-| _Bearer Token_
-| _GET - Versionsabfrage Rechenkern_
-
-| _/api/swagger /actuator ...usw._
-| _Basic Auth_
-| _Endpunkte für Webbrowser_
-|===

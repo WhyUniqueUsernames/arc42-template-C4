@@ -41,3 +41,15 @@ Siehe https://docs.arc42.org/section-4/[Lösungsstrategie] in der online-Dokumen
 
 ****
 endif::[]
+
+[%autowidth.stretch]
+|===
+|Technologie |Erläuterung
+
+| _..._
+| _..._
+
+| _..._
+| _..._
+
+|===

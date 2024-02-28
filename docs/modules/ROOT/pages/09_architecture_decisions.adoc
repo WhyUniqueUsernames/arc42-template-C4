@@ -42,3 +42,13 @@ Dort finden Sie Links und Beispiele zum Thema ADR.
 
 ****
 endif::[]
+
+[%autowidth.stretch]
+|===
+|Entscheidung |Erklärung
+
+| ...
+| ...
+
+|===
+

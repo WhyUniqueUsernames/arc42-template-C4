@@ -62,16 +62,5 @@ Siehe https://docs.arc42.org/section-8/[Querschnittliche Konzepte] in der online
 ****
 endif::[]
 
-=== _<Konzept 1>_
 
-_<Erklärung>_
 
-=== _<Konzept 2>_
-
-_<Erklärung>_
-
-...
-
-=== _<Konzept n>_
-
-_<Erklärung>_
