@@ -1,0 +1,18 @@
+# .bitbucket-pipelines.yml
+image: node:18
+
+pipelines:
+  default:
+    - step:
+        name: build Antora documentation
+        caches:
+          - node
+        script:
+          - npm install -D -E @antora/cli@3.1.7
+          - npm install -D -E @antora/site-generator@3.1.7
+          - npm install asciidoctor-plantuml
+          - npm install @antora/lunr-extension
+          - npx antora antora-playbook.yml --to-dir .
+          - git add .
+          - git commit -m "[skip ci] rebuild docs"
+          - git push

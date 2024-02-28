@@ -1,0 +1,44 @@
+site:
+  title: Antora Documentation
+  start_page: <repo-name>::index.adoc
+
+content:
+  sources:
+    # - url: http://.../repo-name.git
+    #   branches: [master, dev, release, docu, ...]
+    #   start_path: src/docs # pfad zur antora.yml
+    - url: ...\repo-name # local for development
+      start_path: src\docs # path to antora.yml
+
+ui:
+  bundle:
+    # url: .../antora-ui-bundle/archive?format=zip # repo
+    url: ...\antora-ui-bundle # # local for development
+    snapshot: true
+
+network:
+  https_proxy: <url>
+  http_proxy: <url>
+
+output:
+  clean: false # not with toplevel folder xD
+  destinations:
+  - provider: fs
+    path: ./
+
+antora:
+  extensions:
+    - '@antora/collector-extension'
+    - require: asciidoctor-plantuml
+    - require: '@antora/lunr-extension' # search-index
+      languages: [en, de]
+
+runtime:
+  fetch: true
+
+asciidoc:
+  attributes:
+    :plantuml-server-url: http://www.plantuml.com/plantuml
+#    :!showArc42Help: # help-texts in site-builder on/off
+  extensions:
+  - asciidoctor-plantuml
